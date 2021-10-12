@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$pine-tree: hsla(100, 18%, 13%, 1);
+$blue-sapphire: hsla(195, 67%, 30%, 1);
+$verdigris: hsla(180, 63%, 42%, 1);
+$orange-yellow-crayola: hsla(47, 87%, 66%, 1);
+$sandy-brown: hsla(28, 83%, 61%, 1);
+$red-orange-color-wheel: hsla(14, 92%, 54%, 1);
+$honey-yellow: hsla(42, 100%, 50%, 1);
+header {
+    width: 100%;
+    background-color: $pine-tree;
+    .encabezado {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        h1 {
+            width: 30%;
+            font-size: 3em;
+            padding-left: 1%;
+            a {
+                color: $honey-yellow;
+                text-decoration: none;
+                font-style: italic;
+            }
+        }
+        .ul_productos {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            list-style: none;
+            color: $honey-yellow;
+            li {
+                border: 1px solid transparent;
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+                padding: 1%;
+                font-weight: bold;
+                font-style: italic;
+                a {
+                    text-decoration: none;
+                    color: $honey-yellow;
+                }
+                 :visited {
+                    text-decoration: none;
+                    color: $honey-yellow;
+                }
+            }
+             :hover {
+                border-bottom: 1px solid $honey-yellow;
+            }
+            a:hover {
+                border-bottom: none;
+            }
+        }
+        .informacion {
+            height: 100%;
+            width: 20%;
+            ul {
+                width: 100%;
+                list-style: none;
+                text-align: center;
+                li {
+                    width: 100%;
+                }
+                .fab {
+                    margin-right: 10px;
+                }
+                a {
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $honey-yellow;
+                    cursor: pointer;
+                }
+                 :visited {
+                    color: $honey-yellow
+                }
+            }
+        }
+    }
+    .contenedor_carousel {
+        margin: auto;
+        width: 50%;
+        .carousel {
+            width: 45%;
+            margin: auto;
+            padding: 1%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            .foto {
+                width: 400px;
+                height: 275px;
+            }
+            .carousel-item {
+                p,
+                h5 {
+                    font-family: 'Birthstone', cursive;
+                    color: $honey-yellow;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+    }
+}
+
+main {
+    .distribucion {
+        background-color: $sandy-brown;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .dis-img_span {
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            padding-left: 12%;
+            p {
+                display: inline;
+                color: white;
+                margin-left: 1%;
+            }
+        }
+    }
+    .slogan {
+        height: 30vh;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: $honey-yellow;
+        width: 100%;
+        img {
+            border-radius: 250px;
+            width: 10%;
+            height: 90%;
+        }
+        p {
+            color: white;
+            width: 30%;
+            text-align: justify;
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+    }
+    .ult_section {
+        width: 100%;
+        color: $honey-yellow;
+        background-color: $pine-tree;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        .metodosPagos {
+            border-right: 1px solid $honey-yellow;
+            width: 50%;
+            text-transform: uppercase;
+        }
+        .envios {
+            text-align: center;
+            width: 50%;
+            border-right: 1px solid $honey-yellow;
+            .h3_mq {
+                display: none;
+            }
+        }
+        .contacto {
+            width: 50%;
+            ul {
+                width: 100%;
+                li {
+                    margin: auto;
+                    width: 50%;
+                    list-style: none;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    i {
+                        margin-right: 2%;
+                    }
+                    a {
+                        color: $honey-yellow;
+                        text-decoration: none;
+                         :visited {
+                            text-decoration: none;
+                            color: $honey-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid $honey-yellow;
+    color: $honey-yellow;
+    background-color: $pine-tree;
+    padding: 1%;
+    text-align: center;
+}
+
+@media(max-width:360px) {
+    header {
+        width: 100%;
+        .encabezado {
+            h1 {
+                font-size: 1.5em;
+                width: 100%;
+                text-align: center;
+            }
+            .ul_productos {
+                width: 100%;
+                font-size: 10px;
+                align-items: center;
+                justify-content: start;
+                padding: 0px;
+                li {
+                    padding: 0px;
+                }
+            }
+            .informacion {
+                display: none;
+            }
+            .contenedor_carousel {
+                display: none;
+            }
+        }
+    }
+    main {
+        .distribucion {
+            .dis-img_span {
+                width: 100%;
+                font-size: 10px;
+                padding: 0px;
+                p {
+                    display: block;
+                    color: white;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .slogan {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $honey-yellow;
+            img {
+                width: 50%;
+            }
+            p {
+                font-size: 10px;
+                color: white;
+                width: 48%;
+                text-align: justify;
+                margin-left: 2%;
+            }
+        }
+        .ult_section {
+            width: 100%;
+            color: $honey-yellow;
+            background-color: $pine-tree;
+            padding: 0%;
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            .metodosPagos {
+                width: 32%;
+                text-align: center;
+                img {
+                    width: 100%;
+                    height: 20%;
+                }
+            }
+            .envios {
+                text-align: center;
+                width: 35%;
+                .h3_mq_1920 {
+                    display: none;
+                }
+                .h3_mq {
+                    display: block;
+                    margin-bottom: 27%;
+                }
+            }
+            .contacto {
+                width: 33%;
+                ul {
+                    width: 100%;
+                    padding: 0px;
+                    li {
+                        width: 100%;
+                        font-size: 10px;
+                        margin-bottom: 5%;
+                        i {
+                            margin-right: 3%;
+                            margin-left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 13px;
+    }
+}

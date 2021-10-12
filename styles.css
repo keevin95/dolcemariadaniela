@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #1f271b;
+}
+
+header .encabezado {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .encabezado h1 {
+  width: 30%;
+  font-size: 3em;
+  padding-left: 1%;
+}
+
+header .encabezado h1 a {
+  color: #ffb300;
+  text-decoration: none;
+  font-style: italic;
+}
+
+header .encabezado .ul_productos {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  color: #ffb300;
+}
+
+header .encabezado .ul_productos li {
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+header .encabezado .ul_productos li a {
+  text-decoration: none;
+  color: #ffb300;
+}
+
+header .encabezado .ul_productos li :visited {
+  text-decoration: none;
+  color: #ffb300;
+}
+
+header .encabezado .ul_productos :hover {
+  border-bottom: 1px solid #ffb300;
+}
+
+header .encabezado .ul_productos a:hover {
+  border-bottom: none;
+}
+
+header .encabezado .informacion {
+  height: 100%;
+  width: 20%;
+}
+
+header .encabezado .informacion ul {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+header .encabezado .informacion ul li {
+  width: 100%;
+}
+
+header .encabezado .informacion ul .fab {
+  margin-right: 10px;
+}
+
+header .encabezado .informacion ul a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #ffb300;
+  cursor: pointer;
+}
+
+header .encabezado .informacion ul :visited {
+  color: #ffb300;
+}
+
+header .contenedor_carousel {
+  margin: auto;
+  width: 50%;
+}
+
+header .contenedor_carousel .carousel {
+  width: 45%;
+  margin: auto;
+  padding: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+header .contenedor_carousel .carousel .foto {
+  width: 400px;
+  height: 275px;
+}
+
+header .contenedor_carousel .carousel .carousel-item p,
+header .contenedor_carousel .carousel .carousel-item h5 {
+  font-family: 'Birthstone', cursive;
+  color: #ffb300;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main .distribucion {
+  background-color: #ee9649;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .distribucion .dis-img_span {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  padding-left: 12%;
+}
+
+main .distribucion .dis-img_span p {
+  display: inline;
+  color: white;
+  margin-left: 1%;
+}
+
+main .slogan {
+  height: 30vh;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffb300;
+  width: 100%;
+}
+
+main .slogan img {
+  border-radius: 250px;
+  width: 10%;
+  height: 90%;
+}
+
+main .slogan p {
+  color: white;
+  width: 30%;
+  text-align: justify;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+main .ult_section {
+  width: 100%;
+  color: #ffb300;
+  background-color: #1f271b;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .ult_section .metodosPagos {
+  border-right: 1px solid #ffb300;
+  width: 50%;
+  text-transform: uppercase;
+}
+
+main .ult_section .envios {
+  text-align: center;
+  width: 50%;
+  border-right: 1px solid #ffb300;
+}
+
+main .ult_section .envios .h3_mq {
+  display: none;
+}
+
+main .ult_section .contacto {
+  width: 50%;
+}
+
+main .ult_section .contacto ul {
+  width: 100%;
+}
+
+main .ult_section .contacto ul li {
+  margin: auto;
+  width: 50%;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+main .ult_section .contacto ul li i {
+  margin-right: 2%;
+}
+
+main .ult_section .contacto ul li a {
+  color: #ffb300;
+  text-decoration: none;
+}
+
+main .ult_section .contacto ul li a :visited {
+  text-decoration: none;
+  color: #ffb300;
+}
+
+footer {
+  border-top: 1px solid #ffb300;
+  color: #ffb300;
+  background-color: #1f271b;
+  padding: 1%;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  header {
+    width: 100%;
+  }
+  header .encabezado h1 {
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+  header .encabezado .ul_productos {
+    width: 100%;
+    font-size: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0px;
+  }
+  header .encabezado .ul_productos li {
+    padding: 0px;
+  }
+  header .encabezado .informacion {
+    display: none;
+  }
+  header .encabezado .contenedor_carousel {
+    display: none;
+  }
+  main .distribucion .dis-img_span {
+    width: 100%;
+    font-size: 10px;
+    padding: 0px;
+  }
+  main .distribucion .dis-img_span p {
+    display: block;
+    color: white;
+    margin-top: 10px;
+  }
+  main .slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #ffb300;
+  }
+  main .slogan img {
+    width: 50%;
+  }
+  main .slogan p {
+    font-size: 10px;
+    color: white;
+    width: 48%;
+    text-align: justify;
+    margin-left: 2%;
+  }
+  main .ult_section {
+    width: 100%;
+    color: #ffb300;
+    background-color: #1f271b;
+    padding: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 13px;
+  }
+  main .ult_section .metodosPagos {
+    width: 32%;
+    text-align: center;
+  }
+  main .ult_section .metodosPagos img {
+    width: 100%;
+    height: 20%;
+  }
+  main .ult_section .envios {
+    text-align: center;
+    width: 35%;
+  }
+  main .ult_section .envios .h3_mq_1920 {
+    display: none;
+  }
+  main .ult_section .envios .h3_mq {
+    display: block;
+    margin-bottom: 27%;
+  }
+  main .ult_section .contacto {
+    width: 33%;
+  }
+  main .ult_section .contacto ul {
+    width: 100%;
+    padding: 0px;
+  }
+  main .ult_section .contacto ul li {
+    width: 100%;
+    font-size: 10px;
+    margin-bottom: 5%;
+  }
+  main .ult_section .contacto ul li i {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  footer {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
