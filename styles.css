@@ -404,24 +404,21 @@ footer {
     margin-top: 20px;
   }
   main .slogan img {
-    width: 45%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
+    width: 50%;
   }
   main .slogan p {
     color: white;
     width: 45%;
     text-align: justify;
-    font-size: 12px;
+    font-size: 11px;
     margin-left: 10px;
   }
   main .ult_section {
     padding: 3%;
-    font-size: 14px;
+    font-size: 10px;
   }
   main .ult_section h3 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-style: italic;
   }
   main .ult_section .metodosPagos {
