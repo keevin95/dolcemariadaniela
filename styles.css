@@ -370,6 +370,101 @@ footer {
   }
 }
 
+@media (max-width: 414px) {
+  header .encabezado h1 {
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+  }
+  header .encabezado .ul_productos {
+    width: 100%;
+    font-size: 13px;
+  }
+  header .encabezado .ul_productos li {
+    padding: 2%;
+  }
+  header .encabezado .informacion {
+    display: none;
+  }
+  header .encabezado .contenedor_carousel {
+    display: none;
+  }
+  main .distribucion .dis-img_span {
+    width: 100%;
+    font-size: 20px;
+    padding: 0px;
+  }
+  main .distribucion .dis-img_span img {
+    width: 15%;
+  }
+  main .distribucion .dis-img_span p {
+    display: block;
+    color: white;
+    margin-top: 20px;
+  }
+  main .slogan img {
+    width: 46%;
+  }
+  main .slogan p {
+    color: white;
+    width: 50%;
+    text-align: justify;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  main .ult_section {
+    padding: 3%;
+    font-size: 14px;
+  }
+  main .ult_section h3 {
+    font-size: 1.3em;
+    font-style: italic;
+  }
+  main .ult_section .metodosPagos {
+    width: 33%;
+    text-align: center;
+    padding: 1%;
+  }
+  main .ult_section .metodosPagos img {
+    width: 80%;
+    height: 30%;
+  }
+  main .ult_section .envios {
+    text-align: center;
+    width: 40%;
+    padding: 1%;
+  }
+  main .ult_section .envios .h3_mq_1920 {
+    display: none;
+  }
+  main .ult_section .envios .h3_mq {
+    display: block;
+    margin-bottom: 20%;
+  }
+  main .ult_section .contacto {
+    width: 33%;
+    padding: 0px;
+  }
+  main .ult_section .contacto ul {
+    width: 100%;
+  }
+  main .ult_section .contacto ul li {
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  main .ult_section .contacto ul li i {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  footer {
+    font-size: 1em;
+    padding: 2%;
+  }
+}
+
 @media (max-width: 375px) {
   header {
     width: 100%;

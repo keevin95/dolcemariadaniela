@@ -317,6 +317,111 @@ footer {
     }
 }
 
+@media(max-width:414px) {
+    header {
+        .encabezado {
+            h1 {
+                font-size: 3em;
+                width: 100%;
+                text-align: center;
+                padding: 2%;
+            }
+            .ul_productos {
+                width: 100%;
+                font-size: 13px;
+                li {
+                    padding: 2%;
+                }
+            }
+            .informacion {
+                display: none;
+            }
+            .contenedor_carousel {
+                display: none;
+            }
+        }
+    }
+    main {
+        .distribucion {
+            .dis-img_span {
+                width: 100%;
+                font-size: 20px;
+                padding: 0px;
+                img {
+                    width: 15%;
+                }
+                p {
+                    display: block;
+                    color: white;
+                    margin-top: 20px;
+                }
+            }
+        }
+        .slogan {
+            img {
+                width: 46%;
+            }
+            p {
+                color: white;
+                width: 50%;
+                text-align: justify;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+        }
+        .ult_section {
+            padding: 3%;
+            font-size: 14px;
+            h3 {
+                font-size: 1.3em;
+                font-style: italic;
+            }
+            .metodosPagos {
+                width: 33%;
+                text-align: center;
+                padding: 1%;
+                img {
+                    width: 80%;
+                    height: 30%;
+                }
+            }
+            .envios {
+                text-align: center;
+                width: 40%;
+                padding: 1%;
+                .h3_mq_1920 {
+                    display: none;
+                }
+                .h3_mq {
+                    display: block;
+                    margin-bottom: 20%;
+                }
+            }
+            .contacto {
+                width: 33%;
+                padding: 0px;
+                ul {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        font-size: 12px;
+                        margin-bottom: 5%;
+                        text-align: center;
+                        i {
+                            margin-right: 3%;
+                            margin-left: 3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        font-size: 1em;
+        padding: 2%;
+    }
+}
+
 @media(max-width:375px) {
     header {
         width: 100%;
