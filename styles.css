@@ -404,11 +404,11 @@ footer {
     margin-top: 20px;
   }
   main .slogan img {
-    width: 50%;
+    width: 55%;
   }
   main .slogan p {
     color: white;
-    width: 45%;
+    width: 43%;
     text-align: justify;
     font-size: 11px;
     margin-left: 10px;
@@ -440,7 +440,7 @@ footer {
   }
   main .ult_section .envios .h3_mq {
     display: block;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
   }
   main .ult_section .contacto {
     width: 33%;
