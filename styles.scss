@@ -21,7 +21,7 @@ header {
         flex-wrap: wrap;
         h1 {
             width: 30%;
-            font-size: 3em;
+            font-size: 5em;
             text-align: center;
             padding: 3%;
             a {
@@ -164,6 +164,7 @@ main {
         display: flex;
         flex-direction: row;
         .metodosPagos {
+            text-align: center;
             border-right: 1px solid $honey-yellow;
             width: 50%;
             text-transform: uppercase;
