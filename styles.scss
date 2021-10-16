@@ -13,6 +13,7 @@ $honey-yellow: hsla(42, 100%, 50%, 1);
 header {
     width: 100%;
     background-color: $pine-tree;
+    height: 500px;
     .encabezado {
         width: 100%;
         display: flex;
@@ -23,11 +24,12 @@ header {
             width: 30%;
             font-size: 5em;
             text-align: center;
-            padding: 3%;
+            padding: 2%;
             a {
+                width: 100%;
+                font-family: 'Lora', serif;
                 color: $honey-yellow;
                 text-decoration: none;
-                font-style: italic;
             }
         }
         .ul_productos {
@@ -116,6 +118,7 @@ header {
 }
 
 main {
+    height: calcu(100vh -560px);
     .distribucion {
         background-color: $sandy-brown;
         height: 30vh;
@@ -205,11 +208,136 @@ main {
 }
 
 footer {
+    height: 60px;
     border-top: 1px solid $honey-yellow;
     color: $honey-yellow;
     background-color: $pine-tree;
     padding: 1%;
     text-align: center;
+}
+
+
+/*--------------------------DESAYUNOS---------------------------*/
+
+.header_desayuno {
+    height: 175px;
+    .encabezado {
+        height: 100%;
+        .informacion {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.main_desayunos {
+    width: 100%;
+    height: calc(100vh - 235px);
+    background-color: $sandy-brown;
+    h2 {
+        padding: 1%;
+        width: 100%;
+        font-style: italic;
+        text-align: center;
+        color: $pine-tree;
+        background-color: $honey-yellow;
+        border: 1px solid $pine-tree;
+    }
+    .desayunos {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 3%;
+        .card {
+            color: $honey-yellow;
+            background-color: $pine-tree;
+            border: 1px solid $pine-tree;
+            width: 20rem;
+            h5 {
+                font-size: 1em;
+                font-style: italic;
+            }
+            img {
+                height: 275px;
+            }
+            .btn {
+                text-align: center;
+                background-color: $honey-yellow;
+                color: $pine-tree;
+                border: none;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.ventana_desayuno {
+    display: none;
+    position: fixed;
+    top: 0px;
+    border: 1px solid $pine-tree;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1%;
+    width: 100%;
+    height: 100%;
+    .conteiner_img_ingredientes {
+        color: $honey-yellow;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        background-color: $pine-tree;
+        margin: auto;
+        border-radius: 10px;
+        border: 1px solid $pine-tree;
+        h2 {
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 2%;
+            font-size: 3em;
+            background-color: $honey-yellow;
+            color: $pine-tree;
+            padding: 2%;
+        }
+        .contenedor_imagen {
+            padding: 2%;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            h3 {
+                margin: auto;
+                width: 30%;
+                text-align: center;
+                font-size: 2.5em;
+            }
+            img {
+                width: 50%;
+                border: 1px solid $honey-yellow;
+            }
+        }
+        .contenedor_ingredientes {
+            padding: 2%;
+            width: 50%;
+            ul {
+                margin-left: 3%;
+            }
+        }
+        .btn_cerrar {
+            width: 15%;
+            margin: auto;
+            margin-bottom: 1%;
+            margin-top: 1%;
+            background-color: $honey-yellow;
+            color: $pine-tree;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    }
 }
 
 @media(max-width:1024px) {

@@ -16,16 +16,22 @@
 </head>
 
 <body>
-    <header>
+    <header class="header_desayuno">
         <div class="encabezado">
             <h1>
-                <a href="./index.html">DOLCE GUSTO</a>
+                <a href="./index.html">DOLCE</a>
             </h1>
             <ul class="ul_productos">
-                <li>Desayunos</li>
-                <li>Tortas</li>
-                <li>Budines</li>
-                <li>Varios</li>
+                <li>
+                    <a href="./desayuno.html">Desayunos</a>
+                </li>
+                <li>
+                    <a href="./tortas.html">Tortas</a>
+                </li>
+                <li>
+                    <a href="./budines.html">Budines</a>
+                </li>
+                <li><a href="./varios.html">Varios</a></li>
             </ul>
 
             <div class="informacion">
@@ -34,11 +40,164 @@
                     <li><a href="https://www.instagram.com/dolcemariadaniela/" target="_blank"><i class="fab fa-instagram"></i>Dolcemariadaniela</a></li>
                 </ul>
             </div>
-
-
         </div>
     </header>
 
+    <main class="main_desayunos">
+        <section>
+            <h2>DESAYUNOS INDIVIDUALES Y PARA COMPARTIR!</h2>
+            <div class="desayunos">
+                <div class="card">
+                    <img src="./assets/desayuno.png" class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">DESAYUNO DOLCE</h5>
+                        <p class="card-text ">El regalo perfecto para sorprender a un ser querido en el dia de su cumpleaños o por alguna ocasion especial!</p>
+                        <button class="btn btn-primary " id="btn_1" onclick="abrirVentana('btn_1');">VER MAS</button>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="./assets/desayuno1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DESAYUNO MOLTO DOLCE</h5>
+                        <p class="card-text">El regalo perfecto para sorprender a un ser querido en el dia de su cumpleaños o por alguna ocasion especial!</p>
+                        <button class="btn btn-primary " id="btn_2" onclick="abrirVentana('btn_2');">VER MAS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/desayuno2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DESAYUNO SUPER DOLCE</h5>
+                        <p class="card-text">El regalo perfecto para sorprender a un ser querido en el dia de su cumpleaños o por alguna ocasion especial!</p>
+                        <button class="btn btn-primary " id="btn_3" onclick="abrirVentana('btn_3');">VER MAS</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/alfajores.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DESAYUNO SUPER DOLCE DE CUMPLE</h5>
+                        <p class="card-text">El regalo perfecto para sorprender a un ser querido en el dia de su cumpleaños o por alguna ocasion especial!</p>
+                        <button class="btn btn-primary " id="btn_4" onclick="abrirVentana('btn_4');">VER MAS</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="ventana_desayuno" id="dolce">
+        <div class="conteiner_img_ingredientes">
+            <h2>El desayuno dolce trae </h2>
+            <div class="contenedor_imagen">
+                <h3>$1600</h3>
+                <img src="./assets/desayuno.png" alt="">
+            </div>
+            <div class="contenedor_ingredientes">
+                <ul>
+                    <li>Mini torta (lemon pie, brownie, de manzana, chocotorta)</li>
+                    <li> Scons </li>
+                    <li> Cookies</li>
+                    <li> 1 alfajor o conito de dulce de leche</li>
+                    <li> Galletitas de queso</li>
+                    <li> Jugo Baggio</li>
+                    <li> Taza con frase a elección</li>
+                    <li> Servilleta de tela</li>
+                    <li> Sobres de Té (varios sabores)</li>
+                    <li> Postal a elección</li>
+                    <li>En caja de desayuno con visor + caja chica con mini torta</li>
+                </ul>
+
+            </div>
+            <input type="button" value="CERRAR" class="btn_cerrar" onclick="cerrarVentana('dolce');">
+        </div>
+
+    </div>
+
+    <div class="ventana_desayuno" id="m_dolce">
+        <div class="conteiner_img_ingredientes">
+            <h2>El desayuno dolce trae </h2>
+            <div class="contenedor_imagen">
+                <h3>$2200</h3>
+                <img src="./assets/desayuno1.png" alt="">
+            </div>
+            <div class="contenedor_ingredientes">
+                <ul>
+                    <li>Mini torta (lemon pie, brownie, de manzana, chocotorta)</li>
+                    <li> Scons </li>
+                    <li> Cookies</li>
+                    <li> 1 alfajor o conito de dulce de leche</li>
+                    <li> Galletitas de queso</li>
+                    <li> Jugo Baggio</li>
+                    <li> Taza con frase a elección</li>
+                    <li> Servilleta de tela</li>
+                    <li> Sobres de Té (varios sabores)</li>
+                    <li> Postal a elección</li>
+                    <li>En caja de desayuno con visor + caja chica con mini torta</li>
+                </ul>
+
+            </div>
+
+
+            <input type="button" value="CERRAR" class="btn_cerrar" onclick="cerrarVentana('m_dolce');">
+        </div>
+
+    </div>
+
+    <div class="ventana_desayuno" id="s_dolce">
+        <div class="conteiner_img_ingredientes">
+            <h2>El desayuno dolce trae </h2>
+            <div class="contenedor_imagen">
+                <h3>$2800</h3>
+                <img src="./assets/desayuno2.jpeg" alt="">
+            </div>
+            <div class="contenedor_ingredientes">
+                <ul>
+                    <li>Mini torta (lemon pie, brownie, de manzana, chocotorta)</li>
+                    <li> Scons </li>
+                    <li> Cookies</li>
+                    <li> 1 alfajor o conito de dulce de leche</li>
+                    <li> Galletitas de queso</li>
+                    <li> Jugo Baggio</li>
+                    <li> Taza con frase a elección</li>
+                    <li> Servilleta de tela</li>
+                    <li> Sobres de Té (varios sabores)</li>
+                    <li> Postal a elección</li>
+                    <li>En caja de desayuno con visor + caja chica con mini torta</li>
+                </ul>
+
+            </div>
+            <input type="button" value="CERRAR" class="btn_cerrar" onclick="cerrarVentana('s_dolce');">
+        </div>
+    </div>
+
+    <div class="ventana_desayuno" id="sd_dolce">
+        <div class="conteiner_img_ingredientes">
+            <h2>El desayuno dolce trae </h2>
+            <div class="contenedor_imagen">
+                <h3>$3000</h3>
+                <img src="./assets/alfajores.jpeg" alt="">
+            </div>
+            <div class="contenedor_ingredientes">
+                <ul>
+                    <li>Mini torta (lemon pie, brownie, de manzana, chocotorta)</li>
+                    <li> Scons </li>
+                    <li> Cookies</li>
+                    <li> 1 alfajor o conito de dulce de leche</li>
+                    <li> Galletitas de queso</li>
+                    <li> Jugo Baggio</li>
+                    <li> Taza con frase a elección</li>
+                    <li> Servilleta de tela</li>
+                    <li> Sobres de Té (varios sabores)</li>
+                    <li> Postal a elección</li>
+                    <li>En caja de desayuno con visor + caja chica con mini torta</li>
+                </ul>
+
+            </div>
+            <input type="button" value="CERRAR" class="btn_cerrar" onclick="cerrarVentana('sd_dolce');">
+        </div>
+    </div>
+
+    <footer>&copy; Kevin Cánepa | Bootcamp Desarrollador Full Stack </footer>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 
 </html>
