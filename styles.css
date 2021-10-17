@@ -319,6 +319,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -394,6 +396,7 @@ footer {
   background-color: #ffb300;
   color: #1f271b;
   padding: 2%;
+  text-transform: uppercase;
 }
 
 .ventana_desayuno .conteiner_img_ingredientes .contenedor_imagen {
@@ -443,10 +446,11 @@ footer {
 
 @media (max-width: 1024px) {
   header .encabezado h1 {
+    height: 50%;
     font-size: 3em;
     width: 100%;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
   }
   header .encabezado .ul_productos {
     width: 100%;
@@ -533,9 +537,42 @@ footer {
     margin-right: 3%;
     margin-left: 3%;
   }
+  /*----------------------------------DESAYUNOS--------------------*/
+  .header_desayuno {
+    height: 178px;
+  }
+  .header_desayuno .encabezado .informacion {
+    display: block;
+  }
+  .main_desayunos {
+    height: calc(100vh - 185px);
+  }
+  .main_desayunos .desayunos {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .main_desayunos .desayunos .card {
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes {
+    width: 100%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_imagen img {
+    width: 60%;
+    margin-left: 5%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_ingredientes {
+    font-size: 1.3em;
+  }
+  .ventana_desayuno input {
+    padding: 2%;
+  }
+  /*-----------------------------------------------------------------*/
   footer {
+    height: 7vh;
     font-size: 2em;
-    padding: 5%;
+    padding: 2%;
   }
 }
 
@@ -628,6 +665,41 @@ footer {
     margin-right: 3%;
     margin-left: 3%;
   }
+  /*-----------------------------------------------------DESAYUNO-------------------------------------------------*/
+  .header_desayuno .encabezado .informacion {
+    display: none;
+  }
+  .main_desayunos {
+    height: 100%;
+  }
+  .ventana_desayuno {
+    padding: 0px;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes {
+    padding: 0px;
+    width: 100%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes h2 {
+    font-size: 1.5em;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_imagen {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_imagen h3 {
+    width: 100%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_imagen img {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .contenedor_ingredientes {
+    font-size: 12px;
+  }
+  .ventana_desayuno .conteiner_img_ingredientes .btn_cerrar {
+    width: 50%;
+  }
+  /*----------------------------------------------------*/
   footer {
     font-size: 1em;
     padding: 5%;
